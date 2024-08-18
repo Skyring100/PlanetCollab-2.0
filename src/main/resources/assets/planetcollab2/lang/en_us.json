@@ -1,12 +1,10 @@
 {
-  "item.planetcollab2.mars" : "Mars",
   "item.planetcollab2.edible_insomnia": "Insomnicrack",
   "item.planetcollab2.monster_mash": "Monster Mash",
 
-  "block.planetcollab2.nerd_block": "Nerd Block",
+  "block.planetcollab2.monster_mash_block": "Monster Mash Block",
 
   "itemGroup.maintab" : "Planet Collab",
-  "itemGroup.dumbtab" : "Other",
 
   "effect.planetcollab2.extreme_insomnia": "Extreme Insomnia",
   "item.minecraft.potion.effect.extreme_insomnia_potion": "Potion of Extreme Insomnia",

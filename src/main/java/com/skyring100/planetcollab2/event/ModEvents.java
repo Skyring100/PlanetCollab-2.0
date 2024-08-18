@@ -19,7 +19,7 @@ public class ModEvents {
         genericTrades.add((trader, random) -> new MerchantOffer(
                 //input, output, max uses, xp gained, price multiplier
                 new ItemStack(Items.EMERALD, 2),
-                new ItemStack(ModItems.MARS.get(), 1),
+                new ItemStack(ModItems.EDIBLE_INSOMNIA.get(), 12),
                 3, 18, 0.2f));
 
     }

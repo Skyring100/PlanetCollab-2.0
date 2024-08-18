@@ -10,10 +10,4 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.EDIBLE_INSOMNIA.get());
         }
     };
-    public static final CreativeModeTab DUMB_TAB = new CreativeModeTab("dumbtab") {
-        @Override
-        public ItemStack makeIcon() {
-            return new ItemStack(ModItems.MARS.get());
-        }
-    };
 }

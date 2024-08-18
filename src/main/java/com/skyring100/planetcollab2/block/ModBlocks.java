@@ -19,7 +19,7 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, PlanetCollab2.MOD_ID);
-    public static final RegistryObject<Block> NERD_BLOCK = registerBlock("nerd_block", () -> new Block(BlockBehaviour.Properties.of(Material.SPONGE).strength(1f)), ModCreativeModeTab.DUMB_TAB);
+    public static final RegistryObject<Block> MONSTER_MASH_BLOCK = registerBlock("monster_mash_block", () -> new Block(BlockBehaviour.Properties.of(Material.SPONGE).strength(1f)), ModCreativeModeTab.MAIN_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn  = BLOCKS.register(name, block);
