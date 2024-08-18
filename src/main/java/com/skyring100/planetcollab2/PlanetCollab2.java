@@ -1,8 +1,17 @@
 package com.skyring100.planetcollab2;
 
 import com.mojang.logging.LogUtils;
+import com.skyring100.planetcollab2.block.ModBlocks;
+import com.skyring100.planetcollab2.effect.ModEffects;
+import com.skyring100.planetcollab2.item.ModItems;
+import com.skyring100.planetcollab2.potion.ModPotions;
+import com.skyring100.planetcollab2.utils.BetterBrewingRecipe;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -42,8 +51,13 @@ public class PlanetCollab2 {
         BLOCKS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
         ITEMS.register(modEventBus);
-
          */
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
+
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
@@ -63,6 +77,11 @@ public class PlanetCollab2 {
 
         Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
          */
+        event.enqueueWork(() -> {
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, ModItems.EDIBLE_INSOMNIA.get(), ModPotions.EXTREME_INSOMNIA_POTION.get()));
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, ModItems.MONSTER_MASH.get(), ModPotions.SPITEFUL_RUSH_POTION.get()));
+        });
+
     }
 
     /*
