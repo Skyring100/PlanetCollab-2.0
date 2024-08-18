@@ -1,0 +1,22 @@
+{
+  "item.planetcollab2.mars" : "Mars",
+  "item.planetcollab2.edible_insomnia": "Insomnicrack",
+  "item.planetcollab2.monster_mash": "Monster Mash",
+
+  "block.planetcollab2.nerd_block": "Nerd Block",
+
+  "itemGroup.maintab" : "Planet Collab",
+  "itemGroup.dumbtab" : "Other",
+
+  "effect.planetcollab2.extreme_insomnia": "Extreme Insomnia",
+  "item.minecraft.potion.effect.extreme_insomnia_potion": "Potion of Extreme Insomnia",
+  "item.minecraft.splash_potion.effect.extreme_insomnia_potion": "Splash Potion of Extreme Insomnia",
+  "item.minecraft.lingering_potion.effect.extreme_insomnia_potion": "Lingering Potion of Extreme Insomnia",
+  "item.minecraft.tipped_arrow.effect.extreme_insomnia_potion": "Arrow of Extreme Insomnia",
+
+  "effect.planetcollab2.spiteful_rush" : "Death Rush",
+  "item.minecraft.potion.effect.spiteful_rush_potion": "Potion of Death Rush",
+  "item.minecraft.splash_potion.effect.spiteful_rush_potion": "Splash Potion of Death Rush",
+  "item.minecraft.lingering_potion.effect.spiteful_rush_potion": "Lingering Potion of Death Rush",
+  "item.minecraft.tipped_arrow.effect.spiteful_rush_potion": "Arrow of Death Rush"
+}
